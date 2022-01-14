@@ -4,7 +4,7 @@ from utils import pipeline_model
 
 app = Flask(__name__)
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 def main():
     return render_template("main.html")
 
