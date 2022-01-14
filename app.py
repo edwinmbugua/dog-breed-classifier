@@ -9,7 +9,7 @@ def main():
     return render_template("main.html")
 
 
-@app.route('/breed',methods=['GET'])
+@app.route('/breed')
 def breed():
     return render_template("breed.html")
 
