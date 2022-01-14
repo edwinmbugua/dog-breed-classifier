@@ -4,12 +4,12 @@ from utils import pipeline_model
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def main():
     return render_template("main.html")
 
 
-@app.route('/breed')
+@app.route('/breed',methods=['GET'])
 def breed():
     return render_template("breed.html")
 
